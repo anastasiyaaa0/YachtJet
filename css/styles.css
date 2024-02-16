@@ -42,12 +42,7 @@ h2 {
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.02em;
-
   color: #fbfbfb;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.02em;
   margin: 0 auto;
   text-align: center;
 }
@@ -96,7 +91,7 @@ h2 {
   height: 40px;
   border-radius: 8px;
   color: #fbfbfb;
-  background: rgba(251, 251, 251, 0.3);
+  background: rgba(27, 65, 75, 0.5);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -213,7 +208,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 260px 20px 302px 20px;
+  padding: 260px 20px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -655,6 +650,10 @@ h2 {
 
 .footer-info > .logo-text {
   color: #fbfbfb;
+}
+
+.footer-navigation-list-item {
+  background: rgba(251, 251, 251, 0.3);
 }
 
 .footer-navigation-list-item:hover,

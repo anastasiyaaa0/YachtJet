@@ -1,0 +1,268 @@
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .top-menu {
+    max-width: 704px;
+    padding: 4px 30px;
+    position: absolute;
+    top: 32px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .top-menu > .navigation {
+    display: flex;
+  }
+
+  .navigation-list-item {
+    width: 90px;
+  }
+
+  .top-menu > .socmedia-list {
+    display: flex;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+
+  .header-modal-menu {
+    display: none;
+  }
+
+  .hero-container {
+    background-image: linear-gradient(
+        -0.82deg,
+        rgba(17, 19, 31, 0.8) 42.62%,
+        rgba(17, 19, 31, 0.31) 84.141%,
+        rgba(17, 19, 31, 0) 99.969%
+      ),
+      url(../img/hero-img-tab.jpg);
+    padding: 280px 32px 250px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          -0.82deg,
+          rgba(17, 19, 31, 0.8) 42.62%,
+          rgba(17, 19, 31, 0.31) 84.141%,
+          rgba(17, 19, 31, 0) 99.969%
+        ),
+        url(../img/hero-img-tab-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 70px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 48px;
+  }
+
+  .hero-btn {
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 16px 40px;
+  }
+
+  .about-us {
+    margin-bottom: 150px;
+  }
+
+  .about-us-text {
+    padding: 50px 32px;
+  }
+
+  .about-us-title {
+    margin-bottom: 50px;
+  }
+
+  .about-us-text-first {
+    font-size: 23px;
+  }
+
+  .about-us-text-second {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .our-yachts {
+    margin-bottom: 150px;
+  }
+
+  .our-yachts-title {
+    max-width: 645px;
+    margin-bottom: 75px;
+  }
+
+  .our-yachts-list {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 32px;
+  }
+
+  .our-yachts-list-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .item-second {
+    display: block;
+  }
+
+  .truncate {
+    margin: 0;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 148px;
+  }
+
+  .our-yacht-name {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .our-yacht-type {
+    font-size: 13px;
+    line-height: 1.18;
+  }
+
+  .our-yachts-link-btn {
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 16px 40px;
+    width: 180px;
+    height: 52px;
+  }
+
+  .advantages {
+    margin-bottom: 150px;
+  }
+
+  .advantages-wrap {
+    padding: 90px 32px;
+    margin-bottom: 32px;
+  }
+
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 44px 32px;
+  }
+
+  .advantages-list-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .advantages-number {
+    font-size: 32px;
+  }
+
+  .advantages-text {
+    font-size: 13px;
+  }
+
+  .rent-a-yacht {
+    margin-bottom: 150px;
+  }
+
+  .rent-a-yacht-form-wrap {
+    padding: 0 116px;
+    margin-bottom: 100px;
+  }
+
+  .rent-a-yacht-title {
+    margin-bottom: 50px;
+  }
+
+  .rent-a-yacht-form {
+    width: 472px;
+  }
+
+  .form-fields {
+    margin-bottom: 50px;
+  }
+
+  .form-input {
+    height: 54px;
+    padding: 18px;
+  }
+
+  .form-input::placeholder {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .text-area-input {
+    height: 116px;
+  }
+
+  .send-form-btn {
+    padding: 18px 75px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .reviews {
+    margin-bottom: 150px;
+  }
+
+  .reviews-text {
+    max-width: 570px;
+    font-size: 14px;
+    line-height: 1.29;
+    margin: 0 auto 75px;
+    text-align: center;
+  }
+
+  .reviews-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .reviews-list-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .review-second {
+    display: block;
+  }
+
+  .footer > .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer-container {
+    gap: 95px;
+    padding: 50px 48px 20px;
+  }
+
+  .footer-info {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .footer-text {
+    max-width: 640px;
+    font-size: 32px;
+    margin-bottom: 100px;
+  }
+}

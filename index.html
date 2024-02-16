@@ -20,61 +20,121 @@
 
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container top-menu">
         <a href="./index.html" class="logo-text">yachtjet</a>
-        <nav class="header-navigation">
-          <ul class="header-navigation-list">
-            <li class="header-navigation-list-item">
-              <a href="#about" class="header-navigation-link">ABOUT</a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a href="#about" class="navigation-link">ABOUT</a>
             </li>
-            <li class="header-navigation-list-item">
-              <a href="#yachts" class="header-navigation-link">YACHTS</a>
+            <li class="navigation-list-item">
+              <a href="#yachts" class="navigation-link">YACHTS</a>
             </li>
-            <li class="header-navigation-list-item">
-              <a href="#reviews" class="header-navigation-link">REVIEWS</a>
+            <li class="navigation-list-item">
+              <a href="#reviews" class="navigation-link">REVIEWS</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-socmedia-list">
-          <li class="header-socmedia-list-item">
+        <ul class="socmedia-list">
+          <li class="socmedia-list-item">
             <a
               href="https://www.instagram.com/"
-              class="header-socmedia-link"
+              class="socmedia-link"
               target="_blank"
             >
-              <svg width="19" height="19" class="soc-media-icon">
+              <svg width="24" height="24" class="soc-media-icon">
                 <use href="./img/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="header-socmedia-list-item">
+          <li class="socmedia-list-item">
             <a
               href="https://www.youtube.com"
-              class="header-socmedia-link"
+              class="socmedia-link"
               target="_blank"
             >
-              <svg width="19" height="19" class="soc-media-icon">
+              <svg width="24" height="24" class="soc-media-icon">
                 <use href="./img/symbol-defs.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
-          <li class="header-socmedia-list-item">
+          <li class="socmedia-list-item">
             <a
               href="https://www.facebook.com"
-              class="header-socmedia-link"
+              class="socmedia-link"
               target="_blank"
             >
-              <svg width="19" height="19" class="soc-media-icon">
+              <svg width="24" height="24" class="soc-media-icon">
                 <use href="./img/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <button type="submit" class="menu-open-btn">
+        <button type="button" class="menu-open-btn">
           <svg class="menu-open-icon" width="28" height="28">
             <use href="./img/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+
+      <!-- add class "is-open" to open -->
+      <div class="header-modal-menu">
+        <div class="top-menu">
+          <a href="./index.html" class="logo-text">yachtjet</a>
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-close-icon" width="28" height="28">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="navigation modal-navigation">
+          <ul class="navigation-list modal-navigation-list">
+            <li class="navigation-list-item modal-navigation-list-item">
+              <a href="#about" class="navigation-link">ABOUT</a>
+            </li>
+            <li class="navigation-list-item modal-navigation-list-item">
+              <a href="#yachts" class="navigation-link">YACHTS</a>
+            </li>
+            <li class="navigation-list-item modal-navigation-list-item">
+              <a href="#reviews" class="navigation-link">REVIEWS</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="socmedia-list">
+          <li class="socmedia-list-item">
+            <a
+              href="https://www.instagram.com/"
+              class="socmedia-link"
+              target="_blank"
+            >
+              <svg width="24" height="24" class="white-soc-media-icon">
+                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socmedia-list-item">
+            <a
+              href="https://www.youtube.com"
+              class="socmedia-link"
+              target="_blank"
+            >
+              <svg width="24" height="24" class="white-soc-media-icon">
+                <use href="./img/symbol-defs.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socmedia-list-item">
+            <a
+              href="https://www.facebook.com"
+              class="socmedia-link"
+              target="_blank"
+            >
+              <svg width="24" height="24" class="white-soc-media-icon">
+                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -444,15 +504,15 @@
           <picture>
             <source
               srcset="
-                ./img/rent-a-yacht-img-desk-extended.jpg    1x,
-                ./img/rent-a-yacht-img-desk-extended-2x.jpg 2x
+                ./img/rent-a-yacht-img-desktop-expanded.jpg    1x,
+                ./img/rent-a-yacht-img-desktop-expanded-2x.jpg 2x
               "
               media="(min-width: 1440px)"
             />
             <source
               srcset="
-                ./img/rent-a-yacht-img-desk.jpg    1x,
-                ./img/rent-a-yacht-img-desk-2x.jpg 2x
+                ./img/rent-a-yacht-img-desktop.jpg    1x,
+                ./img/rent-a-yacht-img-desktop-2x.jpg 2x
               "
               media="(min-width: 1280px)"
             />
@@ -546,6 +606,83 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-info">
+            <a href="./index.html" class="logo-text">yachtjet</a>
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-list-item footer-navigation-list-item">
+                  <a href="#about" class="navigation-link">ABOUT</a>
+                </li>
+                <li class="navigation-list-item footer-navigation-list-item">
+                  <a href="#yachts" class="navigation-link">YACHTS</a>
+                </li>
+                <li class="navigation-list-item footer-navigation-list-item">
+                  <a href="#reviews" class="navigation-link">REVIEWS</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="socmedia-list">
+              <li class="socmedia-list-item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="socmedia-link"
+                  target="_blank"
+                >
+                  <svg width="24" height="24" class="white-soc-media-icon">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socmedia-list-item">
+                <a
+                  href="https://www.youtube.com"
+                  class="socmedia-link"
+                  target="_blank"
+                >
+                  <svg width="24" height="24" class="white-soc-media-icon">
+                    <use href="./img/symbol-defs.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socmedia-list-item">
+                <a
+                  href="https://www.facebook.com"
+                  class="socmedia-link"
+                  target="_blank"
+                >
+                  <svg width="24" height="24" class="white-soc-media-icon">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p class="footer-text">
+              No matter which yacht you choose, our experienced crew will ensure
+              that your journey is smooth and enjoyable.
+            </p>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a class="footer-list-text" href="./index.html"
+                  >2023. Yacht Adventures</a
+                >
+              </li>
+              <li class="footer-list-item">
+                <a
+                  class="footer-list-text"
+                  href="https://en.wikipedia.org/wiki/Privacy_policy#:~:text=A%20privacy%20policy%20is%20a,a%20customer%20or%20client's%20data."
+                  >Privacy Police</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

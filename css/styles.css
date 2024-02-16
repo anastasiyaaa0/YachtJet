@@ -59,11 +59,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* .header {
-  margin-bottom: ;
-} */
-
-.header-container {
+.top-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,11 +83,57 @@ h2 {
   letter-spacing: -0.03em;
 }
 
-.header-navigation {
+.navigation-list {
+  display: flex;
+  gap: 4px;
+}
+
+.navigation-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 40px;
+  border-radius: 8px;
+  color: #fbfbfb;
+  background: rgba(251, 251, 251, 0.3);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-item:hover,
+.navigation-list-item:focus {
+  background-color: #1b414b;
+}
+
+.navigation-link {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.socmedia-list {
+  display: flex;
+  gap: 8px;
+}
+
+.soc-media-icon {
+  fill: #1b414b;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-media-icon:hover,
+.soc-media-icon:focus {
+  fill: #062730;
+}
+
+.top-menu > .navigation {
   display: none;
 }
 
-.header-socmedia-list {
+.top-menu > .socmedia-list {
   display: none;
 }
 
@@ -107,6 +149,58 @@ h2 {
   stroke: #1b414b;
 }
 
+.header-modal-menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #0e1823;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  padding: 260px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.menu-close-icon {
+  fill: #055545;
+}
+
+.modal-navigation-list {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-navigation-list-item {
+  width: 91px;
+  background: rgba(27, 65, 75, 0.5);
+}
+
+.modal-navigation-list-item:hover,
+.modal-navigation-list-item:focus {
+  background-color: #1b414b;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .hero-container {
   background-image: linear-gradient(
       -0.82deg,
@@ -120,6 +214,20 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 260px 20px 302px 20px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: linear-gradient(
+        -0.82deg,
+        rgba(17, 19, 31, 0.8) 42.62%,
+        rgba(17, 19, 31, 0.31) 84.141%,
+        rgba(17, 19, 31, 0) 99.969%
+      ),
+      url(/img/hero-img-mob-2x.jpg);
+  }
 }
 
 .hero-title {
@@ -145,13 +253,21 @@ h2 {
 .hero-btn {
   margin: 0 auto;
   border-radius: 15px;
-  background: rgb(27, 65, 75);
-  color: rgb(251, 251, 251);
+  background: #1b414b;
+  color: #fbfbfb;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.02em;
   padding: 14px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #fbfbfb;
+  color: #1b414b;
 }
 
 .about-us {
@@ -311,9 +427,16 @@ h2 {
   width: 143px;
   height: 46px;
   background-color: inherit;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-yachts-link-btn:hover,
+.our-yachts-link-btn:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+  border: #fbfbfb;
 }
 
 .advantages {
@@ -441,8 +564,8 @@ h2 {
 
 .send-form-btn:hover,
 .send-form-btn:focus {
-  background: rgb(251, 251, 251);
-  color: rgb(27, 65, 75);
+  background: #fbfbfb;
+  color: #1b414b;
 }
 
 .rent-a-yacht-pic {
@@ -505,5 +628,73 @@ h2 {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.footer > .container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 24px 24px 0px 0px;
+  background: rgb(27, 65, 75);
+  padding: 40px 30px 20px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px 37px;
+  flex-wrap: wrap;
+}
+
+.footer-info > .logo-text {
+  color: #fbfbfb;
+}
+
+.footer-navigation-list-item:hover,
+.footer-navigation-list-item:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
+.white-soc-media-icon {
+  fill: #fbfbfb;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.white-soc-media-icon:hover,
+.white-soc-media-icon:focus {
+  fill: #fbfbfbcc;
+}
+
+.footer-text {
+  max-width: 280px;
+  color: #fbfbfb;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 82px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-list-text {
+  color: rgba(251, 251, 251, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
 }

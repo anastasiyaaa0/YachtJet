@@ -276,13 +276,15 @@ h2 {
 }
 
 .about-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding: 40px 20px;
 }
 
 .about-us-title {
   color: rgb(27, 65, 75);
   text-align: start;
-  margin-bottom: 40px;
 }
 
 .about-us-text-first {
@@ -300,6 +302,10 @@ h2 {
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: -0.02em;
+}
+
+.about-us-pic {
+  border-radius: 24px;
 }
 
 .our-yachts {
@@ -438,11 +444,16 @@ h2 {
   margin-bottom: 80px;
 }
 
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .advantages-wrap {
   border-radius: 24px;
   background: rgb(27, 65, 75);
   padding: 80px 20px;
-  margin-bottom: 20px;
 }
 
 .advantages-list {
@@ -493,8 +504,10 @@ h2 {
   margin-bottom: 80px;
 }
 
-.rent-a-yacht-form-wrap {
-  margin-bottom: 80px;
+.rent-a-yacht-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .rent-a-yacht-title {
